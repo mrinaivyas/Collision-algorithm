@@ -2,19 +2,6 @@ from vpython import *
 import numpy as np
 import fcl
 
-# class object():
-# 	def __init__():
-# 		self.pos = vector(0,0,0)
-# 		self.velocity= vector(0,0,0)
-		
-
-# 	def sphere(self):
-# 		ball = sphere(self.pos=random.randint(-15, -15), radius = 1, color= color.red)
-# 		ball.velocity = random.randint(0, 10)
-# 		sphere = fcl.sphere(1.0)
-# 		t1 = fcl.Transform()
-# 		o1 = fcl.CollisionObject(sphere, t1)
-
 
 
 
@@ -132,14 +119,6 @@ while 1:
 	elif ball4.pos.y > (floor.pos.y + 15.0):
 		ball4.velocity.y = -ball4.velocity.y
 
-	boo = collision(ball1,ball2,ball3,ball4)
-	objs = ['obj1', 'obj2', 'obj3', 'obj4']
-	balls = [ball1, ball2, ball3, ball4]
-	obj1 = ball1 ; obj2 = ball2 ; obj3 = ball3 ; obj4 = ball4;
-	boo = list(boo)
-	for i in boo:
-		b1 = i[0]
-		b2 = i[1]
-		b1.velocity.y = -1 * b2.velocity.y
+	collied_objs = collision(ball1,ball2,ball3,ball4)
 
 	

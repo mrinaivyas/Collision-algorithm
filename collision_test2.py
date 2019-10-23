@@ -44,7 +44,7 @@ class objInBox():
 		return result, ret  #result.is_collide is the required function
 
 	def updateVel(self,)
-
+		pass
 
 
 class DrawObj(objInBox):
